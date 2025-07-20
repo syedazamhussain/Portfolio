@@ -210,11 +210,11 @@
                 <p>Get In Touch</p>
             </div>
             <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
+                <form name="submitToGoogleSheet" method="POST">
+                    <input type="text" name="name" placeholder="name" required>
+                    <input type="email" name="email" placeholder="email" required>
+                    <input type="text" name="subject" placeholder="subject">
+                    <textarea name="message" placeholder="message"></textarea>
                     <input type="submit" value="Send Message" class="submit">
                 </form>
                 <span id="msg"></span>
@@ -230,7 +230,7 @@
     
     <!-------------------------- Footer section -------------------------->
    <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
+    <small class="message">Thanks for checking out my work. Keep coding, keep creating!</small>
     <small class="copyright">&copy; Copyright 2025. All rights reserved.</small>
    </footer>
 
