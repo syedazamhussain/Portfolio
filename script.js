@@ -65,7 +65,7 @@ $(document).ready(function() {
     });
 
   //contact form to excel sheet
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzUSaaX3XmlE5m9YLOHOBrRuCh2Ohv49N9bs4bew7xPd1qlgpvXtnudDs5Xhp3jF-Fx/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhLIqNXHvIs8Y6zVatFWPa8Urj8RIVTmYi_N8gaAdBsyFKajR5C6ujMG314qvBSMxukQ/exec';
   const form = document.forms['submitToGoogleSheet']
   const msg = document.getElementById("msg")
 
