@@ -37,7 +37,7 @@ body {
 
 
 /*---------------------------Header---------------------------*/
-.logo::after{
+.logo::after {
   content: "⚡";
   margin-right: 8px;
 }
@@ -72,7 +72,8 @@ body {
   font-size: 26px;
   font-weight: 700;
 }
-.logo h4{
+
+.logo h4 {
   color: #fed700;
 }
 
@@ -139,14 +140,14 @@ body {
   box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
 }
 
-profile-photo .img {
+.profile-photo img {
   height: 100%;
   width: 100%;
-  transition: 0.5s;
+  transition: all 0.3s ease-in-out;
 }
 
 .FirstElement .profile-photo img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .profile-text {
@@ -176,7 +177,8 @@ profile-photo .img {
   transition: 0.5s;
 }
 
-.profile-text .social i:hover {
+.profile-text .social i:hover,
+.social a:hover {
   color: #fed700;
   transform: rotate(360deg);
 }
@@ -211,6 +213,7 @@ profile-photo .img {
 .about-content ul {
   color: #fff;
   text-align: justify;
+  font-size: 13px;
 }
 
 .about-content ul li {
@@ -227,7 +230,7 @@ profile-photo .img {
   padding-bottom: 10px;
   margin-bottom: 10px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about-skills ul li:last-child {
@@ -386,7 +389,9 @@ profile-photo .img {
   flex-wrap: wrap;
 }
 
-.project {
+.project,
+.project2,
+.project3 {
   /* padding: 30px 15px; */
   color: #e5e5e5;
   border: 2px solid #e5e5e5;
@@ -399,7 +404,9 @@ profile-photo .img {
   transition: .3s;
 }
 
-.project i {
+.project i,
+.project2 i,
+.project3 i {
   background-color: #fed700;
   width: 60px;
   height: 60px;
@@ -409,18 +416,31 @@ profile-photo .img {
   border-radius: 50%;
 }
 
-.project h4 {
+.project h4,
+.project2 h4,
+.project3 h4 {
   font-size: 26px;
   text-transform: capitalize;
   margin: 20px 0;
 }
 
-.project p {
-  text-align: justify;
+.project p,
+.project2 p,
+.project3 p {
+  text-align: center;
 }
 
-.project:hover {
+.project h4:hover,
+.project2 h4:hover,
+.project3 h4:hover {
+  color: #fed700;
+}
+
+.project:hover,
+.project2:hover,
+.project3:hover {
   border-color: #fed700;
+  color: whitesmoke;
 }
 
 
@@ -462,6 +482,10 @@ profile-photo .img {
   padding: 10px 40px;
   font-weight: bold;
   font-size: 18px;
+}
+
+.submit {
+  transition: all 0.2s ease-in-out;
 }
 
 .contact .submit:hover {
@@ -537,7 +561,7 @@ profile-photo .img {
 }
 
 
-/* Mobile Layout */
+/* Small Layout */
 @media only screen and (max-width:767px) {
   .container {
     width: 350px;
@@ -556,7 +580,7 @@ profile-photo .img {
   }
 
   .profile-text {
-    width: 350px;
+    width: 490px;
   }
 
   .FirstElement .profile-text p {
@@ -587,9 +611,17 @@ profile-photo .img {
     margin-top: 30px;
   }
 
-  .project {
+  .project,
+  .project2,
+  .project3 {
     flex-basis: 100%;
     margin-bottom: 30px;
+  }
+
+  .project h4:hover,
+  .project2 h4:hover,
+  .project3 h4:hover {
+    color: #fed700;
   }
 
 }
