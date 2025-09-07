@@ -441,6 +441,7 @@ body {
 .project3:hover {
   border-color: #fed700;
   color: whitesmoke;
+  cursor: pointer;
 }
 
 
