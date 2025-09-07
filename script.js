@@ -46,7 +46,7 @@ $(document).ready(function () {
   //Project link
 
   document.getElementsByClassName("project")[0].addEventListener("click", function () {
-    window.location.href = "https://google.com";
+    window.location.href = "https://syedazamhussain.github.io/E-commerce-Webpage/";
   });
   document.getElementsByClassName("project2")[0].addEventListener("click", function () {
     window.location.href = "https://syedazamhussain.github.io/Web-Agency/";
