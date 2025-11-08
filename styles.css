@@ -33,9 +33,6 @@ body {
   margin: auto;
 }
 
-
-
-
 /*---------------------------Header---------------------------*/
 .logo::after {
   content: "⚡";
@@ -563,7 +560,7 @@ body {
 
 
 /* Small Layout */
-@media only screen and (max-width:767px) {
+@media  (max-width:400px) {
   .container {
     width: 350px;
   }
@@ -581,11 +578,16 @@ body {
   }
 
   .profile-text {
-    width: 490px;
+    width: 380px;
+    padding: 20px;
+  }
+  .profile-text h1{
+    font-size: 30px;
   }
 
   .FirstElement .profile-text p {
     text-align: justify;
+    font-size: 15px;
   }
 
   .about {
